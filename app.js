@@ -22,6 +22,12 @@ function draw()
 
     positionX += speedX; //this adds motion in X direction when each frame is rendered
     positionY += speedY; //this adds motion in Y direction when each frame
+
+    //however if we don't add constraints to the way we increment, it'll indefinitely move in the same direction
+    if (positionY > 400)
+    {
+        speedY *= -1; //this reverses the direction of the circle
+    }
 }
 
 function windowResized() 
