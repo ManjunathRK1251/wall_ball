@@ -1,10 +1,19 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    height:100%;
+    }
 
 body {
+    margin: 0px;
+    padding: 0px;
+    height:100%;
     font-family: Arial;
     font-size: 16px;
     /* line-height: 1.5; */
-    background-color: #fe934b;
+    /* background-color: #fe934b; */
     color: #333333;
+    overflow: hidden;
 }
 
 canvas {
