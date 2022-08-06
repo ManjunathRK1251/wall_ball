@@ -39,6 +39,14 @@ function draw()
     {
         speedX *= -1;
     }
+
+    //to account for the sudden resizing of the windows
+    //we need to constrain the bouncing of the circle within current windowwidth and windowHeight
+    positionX = constrain(positionX, radius, windowWidth-radius)
+    positionY = constrain(positionY, radius, windowWidth-radius)
+    //1st parameter - the parameter to constrain
+    //2nd parameter - low (min limit)
+    //3rd parameter - high (max limit)
 }
 
 function windowResized() 
