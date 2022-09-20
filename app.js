@@ -35,6 +35,7 @@ function draw()
     // positionY += speedY; //this adds motion in Y direction when each frame
 
     position.add(speed);
+    // speed.mult(1.005);
 
     //however if we don't add constraints to the way we increment, it'll indefinitely move in the same direction
     if (position.y > windowHeight-radius || position.y < radius)
